@@ -1,0 +1,10 @@
+.contact {
+    text-align: left;
+    display: -webkit-box;
+    z-index: 120;
+}
+
+.contact_link {
+    width: 35px;
+    display: inline-block;
+}
