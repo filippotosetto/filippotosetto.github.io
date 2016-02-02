@@ -8,3 +8,19 @@
     width: 35px;
     display: inline-block;
 }
+
+.index-content {
+  display: flex;;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.left-box, .right-box {
+  width: 45%;
+  margin-right: 5%;
+
+}
+
+.left-box h2, .right-box h2 {
+  margin-bottom: 50px;
+}
