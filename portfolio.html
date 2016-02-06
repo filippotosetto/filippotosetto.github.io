@@ -6,10 +6,11 @@ title: Portfolio
 {% assign items = site.project | sort: 'order' %}
 {% for project in items reversed %}
 <div class="project_title_container">
+  <a name="{{ project.title }}"></a>
 <img src="{{ project.icon }}" height="100" />
 <div class="project_title">
 <!--<h2><a href="{{ project.url }}">{{project.title}}</a></h2>-->
-<h2>{{project.title}}</h2>
+<h2>{{ project.title }}</h2>
 <h3>{{ project.role }}</h3>
 </div>
 </div>

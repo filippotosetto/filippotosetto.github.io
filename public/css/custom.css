@@ -9,18 +9,48 @@
     display: inline-block;
 }
 
+.content {
+  padding-top: 0;
+}
+
 .index-content {
-  display: flex;;
+  display: block;
   width: 100%;
-  margin-top: 50px;
 }
 
-.left-box, .right-box {
-  width: 45%;
-  margin-right: 5%;
-
-}
-
-.left-box h2, .right-box h2 {
+.index-content h1 {
   margin-bottom: 50px;
+}
+
+.home-project  {
+  display: block;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.home-project a {
+  color: black;
+}
+
+
+.home-project-img {
+  float: left;
+  margin-right: 20px;
+}
+
+.home-project-description {
+  margin-left: 50px;
+}
+
+.clear {
+  clear: both;
+}
+
+.sidebar-about h1{
+  display: inline-block;
+  line-height: 1.0;
+}
+
+.mdm-hero.mdm-hero--story.mdm-imageCover.mdm-hero--light {
+  background-image: hidden;
 }

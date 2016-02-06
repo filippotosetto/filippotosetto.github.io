@@ -1,5 +1,9 @@
 
 <script async src="https://static.medium.com/embed.js"></script>
 {% for item in site.data.publications %}
-<a class="m-story" data-collapsed="true" href="https://medium.com/@filippotosetto/{{ item.link }}">{{ item.title }}</a><br />
+<div style="float: left; margin-right: 40px;">
+<a data-width="300px" data-height="200px" class="m-story" data-collapsed="false" href="https://medium.com/@filippotosetto/{{ item.link }}">{{ item.title }}</a><br />
+</div>
 {% endfor %}
+
+<div class="clear"></div>
