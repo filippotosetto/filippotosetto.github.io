@@ -1,21 +1,14 @@
 ---
 layout: page
 title: Side Projects
-repositories:
-  - YetAnotherWeatherApp
-  - DotsClone
-  - Visual-Sorting
 ---
 
 <h2>Framewors</h2>
 <div class="github-card" data-user="filippotosetto" data-repo="SwiftOpenWeatherMapAPI" data-target="_blank" data-width="500px"></div>
 
 <h2>Projects</h2>
-
-<div class="github-card" data-user="filippotosetto" data-repo="YetAnotherWeatherApp" data-target="_blank" data-width="500px"></div>
-<div class="github-card" data-user="filippotosetto" data-repo="DotsClone" data-target="_blank" data-width="500px"></div>
-<div class="github-card" data-user="filippotosetto" data-repo="Visual-Sorting" data-target="_blank" data-width="500px"></div>
-
-
+{% for item in site.data.side-projects %}
+<div class="github-card" data-user="filippotosetto" data-repo="{{ item.title }}" data-target="_blank" data-width="500px"></div>
+{% endfor %}
 
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
