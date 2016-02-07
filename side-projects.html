@@ -1,14 +1,15 @@
 ---
 layout: page
 title: Side Projects
+order: 5
 ---
 
 <h2>Framewors</h2>
-<div class="github-card" data-user="filippotosetto" data-repo="SwiftOpenWeatherMapAPI" data-target="_blank" data-width="500px"></div>
+<div class="github-card" data-user="filippotosetto" data-repo="SwiftOpenWeatherMapAPI" data-target="_blank" data-width="300px"></div>
 
 <h2>Projects</h2>
 {% for item in site.data.side-projects %}
-<div class="github-card" data-user="filippotosetto" data-repo="{{ item.title }}" data-target="_blank" data-width="500px"></div>
+<div class="github-card" data-user="filippotosetto" data-repo="{{ item.title }}" data-target="_blank" data-width="300px"></div>
 {% endfor %}
 
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>

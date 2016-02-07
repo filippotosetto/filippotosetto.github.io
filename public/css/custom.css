@@ -54,3 +54,7 @@
 .mdm-hero.mdm-hero--story.mdm-imageCover.mdm-hero--light {
   background-image: hidden;
 }
+
+.project_title_container {
+  margin-top: 70px;
+}

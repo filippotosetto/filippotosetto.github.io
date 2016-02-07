@@ -12,7 +12,7 @@
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
-      {% assign pages_list = site.pages %}
+      {% assign pages_list = site.pages | sort: 'order' %}
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "page" %}
@@ -20,13 +20,14 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-      <a class="sidebar-nav-item" href="/public/Resume.pdf" target="_blank">CV</a>
+      <a class="sidebar-nav-item" href="/public/FT_Resume.pdf" target="_blank">CV</a>
     </nav>
     <div class="contact">
         <div class="contact_link"><a href="http://twitter.com/filippotosetto" target="_blank"><img alt="Twitter" src="{{ site.baseurl }}public/images/social/twitter.png"></a></div>
         <div class="contact_link"><a href="https://medium.com/@filippotosetto" target="_blank"><img alt="Medium" src="{{ site.baseurl }}public/images/social/medium.png"></a></div>
         <div class="contact_link"><a href="https://uk.linkedin.com/in/filippotosetto" target="_blank"><img alt="Linkedin" src="{{ site.baseurl }}public/images/social/linkedin.png"></a></div>
         <div class="contact_link"><a href="http://github.com/filippotosetto" target="_blank"><img alt="github" src="{{ site.baseurl }}public/images/social/github.png"></a></div>
+        <div class="contact_link"><a href="mailto:filippo.tosetto@gmail.com" target="_blank"><img alt="mail" src="{{ site.baseurl }}public/images/social/mail.png"></a></div>
     </div>
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>

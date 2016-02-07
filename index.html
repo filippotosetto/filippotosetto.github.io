@@ -1,33 +1,31 @@
 ---
 layout: default
 title: Home
+order: 1
 ---
 
 
 <div class="index-content">
-    <h1>Latest Projects</h1>
+  <h1>Latest Projects</h1>
 
-    {% assign items = site.project | sort: 'order' %}
-    {% for project in items reversed %}
-    {% if project.featured == true %}
+  {% assign items = site.project | sort: 'order' %}
+  {% for project in items reversed %}
+  {% if project.featured == true %}
 
-    <div class="home-project">
-      <h2><a href="/portfolio/#{{project.title}}">{{project.title}}</a></h2>
-      <div class="home-project-img"><img src="{{ project.icon }}" width="200" /></div>
-      <div class="home-project-description">{{project.short-description}}</div>
-      <div class="clear"></div>
-    </div>
+  <div class="home-project">
+    <h2><a href="/portfolio/#{{project.title}}">{{project.title}}</a></h2>
+    <div class="home-project-img"><img src="{{ project.icon }}" width="200" /></div>
+    <div class="home-project-description">{{project.short-description}}</div>
+    <div class="clear"></div>
+  </div>
 
-    {% endif %}
-    {% endfor %}
+  {% endif %}
+  {% endfor %}
 
-<hr />
-  <!-- </div> -->
+  <hr />
 
-  <!-- <div class="right-box"> -->
-    <h1>Latest Articles</h1>
-    {% include publications.html %}
-  <!-- </div> -->
+  <h1>Latest Articles</h1>
+  {% include publications.html %}
 
 </div>
 <h2>About Me</h2>
