@@ -6,7 +6,7 @@ order: 2
 
 I'm a London based freelance <b>iPhone</b>, <b>iPad</b>, <b>Apple Watch</b>, and <b>Apple TV</b> developer and consultant.
 
-Born and raised in Italy I moved to London in 2010 to become and app developer.
+Born and raised in Italy I moved to London in 2010 to become an app developer.
 
 I'm a pretty good cook, in fact you can find few of my recipes <a href="http://filippotosetto.com/feedmenow/" target="_blank">here</a>.
 
